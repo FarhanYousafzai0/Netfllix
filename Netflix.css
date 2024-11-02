@@ -1,0 +1,311 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+body{
+    background-color: black;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Poppins;
+    
+}
+.main {
+    background-image: url("assets/bg.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+}
+
+
+.main .box {
+    height: 644px;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+nav {
+    max-width: 60vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+nav img{
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    z-index: 10;
+    position: relative;
+
+}
+.hero {
+    font-family: 'Segoe UI', sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;}
+
+.hero> :nth-child(1){
+    font-weight: 900;
+    font-size: 48px;
+    color: white;
+ 
+    font-style: none;
+    line-height: normal;
+}
+.hero> :nth-child(2){
+font-weight: 400;
+font-size: 22px;
+font-style: none;
+line-height: normal;
+}
+.hero> :nth-child(3){
+
+    font-weight: 400;
+    font-size: 20px;
+    font-style: none;
+    line-height: 30px;
+}
+
+.btn :nth-child(1){
+background-color:black;
+font-weight: 500;
+max-width:120px ;
+max-height: 44px;
+border: none;
+color: white;
+padding: 0.5em 0.9em;
+cursor: pointer;
+border-radius: 5px;
+border: 1px solid white;
+}
+.btn :nth-child(2):hover{
+    background-color: rgba(250, 14, 14, 0.795);
+}
+.btn :nth-child(2){
+    background-color: red;
+    max-width:120px ;
+    max-height: 44px;
+    border: none;
+    color: white;
+    padding: 0.5em 0.9em;
+    cursor: pointer;
+    border-radius: 5px;
+    
+    }
+    .btn :nth-child(1):hover{
+        background-color: rgb(255, 252, 252);
+        color: black;
+    }
+
+.hero-btn :nth-child(1){
+
+min-width: 100px;
+min-height: 34.5px;
+padding: 3px 124px 7px 8px ;
+border: none;
+border-radius: 4px;
+background-color: rgba(248, 243, 243, 0.603);
+border: 2px solid white;
+color: white;
+
+}
+.hero-btn :nth-child(2){
+    background-color: red;
+ border: none;
+    color: white;
+    font-weight: 500;
+    min-width: 120px;
+  min-height: 44px;
+  padding: 3px 24px;
+  --radii: 0.5em;
+  cursor: pointer;
+  border-radius: 4px;
+
+}
+.hero-btn :nth-child(2):hover{
+    background-color: rgba(250, 14, 14, 0.795);
+}
+.first{
+    display: flex;
+    
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 555px;
+}
+.first> div :nth-child(1){
+    font-size: 48px;
+    font-weight: 900;
+    font-family: Segoe UI;
+}
+.first>  div :nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+    
+}
+
+section.first>  div {
+    display: flex;
+    flex-direction: column;
+}
+.Faq{
+   
+ text-align: center;
+    min-height: 70vh;
+    padding-top: 50px;
+
+  
+}
+.Faq h2{
+    color: white;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 48px;
+}
+.item{
+    color: white;
+    display: grid;
+    gap: 10px;
+   margin: 50px ;
+    list-style: none;
+    text-align: left;
+    color: white;
+}
+.item li {
+    background-color:   rgba(128, 128, 128, 0.384) ;
+    padding: 14px 20px;
+    font-size:22px ;
+    transition: 0.5s ease ;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.item li:hover{
+    background-color: rgba(255, 255, 255, 0.384);
+    color: white;
+}
+.footer{
+   margin: auto;
+    max-width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 75px 0;
+justify-content: center;
+align-items: center;
+gap: 20px;
+  
+}
+.footer a {
+    color: white;
+    align-items: center;
+
+}
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+ 
+
+}
